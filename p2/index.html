@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ilyosbek — Portfolio</title>
+<meta name="description" content="Ilyosbek — 9-sinf o'quvchisi, dasturchi. Shaxsiy portfolio sayti.">
+<meta name="theme-color" content="#05030f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Kirish: koinot bo'ylab uchish, keyin yulduzlardan "Xush kelibsiz" yozuvi -->
+<div class="intro" id="intro">
+  <canvas id="introCanvas"></canvas>
+  <button class="skip" id="skipBtn">Kirish</button>
+</div>
+
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="spot" id="spot" aria-hidden="true"></div>
+<div class="nebula" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="progress" id="progress"></div>
+
+<header class="header">
+  <nav class="nav container">
+    <a href="#hero" class="logo">Ilyosbek<span>✦</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Men</a></li>
+      <li><a href="#skills">Ko'nikmalar</a></li>
+      <li><a href="#projects">Loyihalar</a></li>
+      <li><a href="#education">Ta'lim</a></li>
+      <li><a href="#contact">Aloqa</a></li>
+    </ul>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menyu">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <span class="badge">🚀 Salom, men</span>
+        <h1>Ilyosbek</h1>
+        <p class="typing">Men <span id="typed"></span><i class="cursor">|</i></p>
+        <p class="tagline">Bugungi harakat, ertangi natija.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn">Loyihalarim</a>
+          <a href="#contact" class="btn btn-outline">Bog'lanish</a>
+        </div>
+        <div class="stats">
+          <div><b id="repoCount" data-count="2">0</b><small>Loyiha</small></div>
+          <div><b data-count="1">0</b><small>Meta sertifikat</small></div>
+          <div><b data-count="9">0</b><small>-sinf</small></div>
+        </div>
+      </div>
+      <div class="avatar-wrap reveal">
+        <img src="./5355030624579821579.jpg" alt="Ilyosbek — profil rasmi" class="avatar">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container narrow reveal">
+      <h2 class="title">Men haqimda</h2>
+      <p>Men Ilyosbek, 9-sinf o'quvchisiman. Dasturlash va o'yinlar olamiga qiziqaman.</p>
+      <p>Veb-saytlar yarataman, kodni mustaqil o'rganaman va loyihalarimni GitHub'da yig'ib boraman.</p>
+      <p>2026-yilda Meta sertifikatini oldim va shu yo'lda to'xtamay davom etyapman.</p>
+      <p>Maqsadim — kuchli dasturchi bo'lib, o'z o'yin va ilovalarimni yaratish.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="title reveal">Ko'nikmalar</h2>
+      <ul class="skills">
+        <li class="reveal" data-level="85"><div class="sk-head"><span>🌐 HTML</span><em>85%</em></div><div class="bar"><i></i></div></li>
+        <li class="reveal" data-level="80"><div class="sk-head"><span>🎨 CSS</span><em>80%</em></div><div class="bar"><i></i></div></li>
+        <li class="reveal" data-level="65"><div class="sk-head"><span>⚡ JavaScript</span><em>65%</em></div><div class="bar"><i></i></div></li>
+        <li class="reveal" data-level="60"><div class="sk-head"><span>🐍 Python</span><em>60%</em></div><div class="bar"><i></i></div></li>
+        <li class="reveal" data-level="50"><div class="sk-head"><span>🧩 Figma</span><em>50%</em></div><div class="bar"><i></i></div></li>
+        <li class="reveal" data-level="70"><div class="sk-head"><span>🔧 Git / GitHub</span><em>70%</em></div><div class="bar"><i></i></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="title reveal">Loyihalarim</h2>
+      <p class="lead reveal">Mening ikkita asosiy loyiham.</p>
+      <div class="projects" id="projectList">
+        <article class="card">
+          <div class="thumb t1" aria-hidden="true">🧩</div>
+          <div class="card-body">
+            <h3>Krossvord (Keassvord)</h3>
+            <p>7 bosqichli o'zbekcha krossvord o'yini. Bosqichni yechsangiz keyingisi ochiladi. Ovoz effektlari, yulduzli kirish animatsiyasi va yorug'/qorong'i rejim bor.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="card-links">
+              <a href="https://htmlpreview.github.io/?https://github.com/IlyosbekIT/Keassvord/blob/main/index.html" target="_blank" rel="noopener">O'ynash ↗</a>
+              <a href="https://github.com/IlyosbekIT/Keassvord" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb t2" aria-hidden="true">🥊</div>
+          <div class="card-body">
+            <h3>Mini Mortal Kombat</h3>
+            <p>Ikki o'yinchili jang o'yini: mushtlash, tepish, blok va maxsus X-Ray zarba. 3 raundli jang, kombo hisoblagich va ekran silkinishi bor.</p>
+            <div class="tags"><span>JavaScript</span><span>Canvas</span><span>O'yin</span></div>
+            <div class="card-links">
+              <a href="https://htmlpreview.github.io/?https://github.com/IlyosbekIT/mini-game-mortalkombat/blob/main/mortal_kombat_v3.html" target="_blank" rel="noopener">O'ynash ↗</a>
+              <a href="https://github.com/IlyosbekIT/mini-game-mortalkombat" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container narrow">
+      <h2 class="title reveal">Ta'lim va yutuqlar</h2>
+      <ul class="timeline">
+        <li class="reveal"><span class="year">2026</span><div><h3>Meta sertifikati</h3><p>Meta tomonidan berilgan sertifikatni qo'lga kiritdim.</p></div></li>
+        <li class="reveal"><span class="year">2026 — hozir</span><div><h3>9-sinf</h3><p>Maktabda o'qiyman, dasturlashni mustaqil o'rganaman.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container narrow">
+      <h2 class="title reveal">Aloqa</h2>
+      <p class="reveal">Loyiha, hamkorlik yoki savol bo'lsa — yozing!</p>
+      <form class="form reveal" id="form">
+        <input id="fName" placeholder="Ismingiz" required>
+        <input id="fMail" type="email" placeholder="Email manzilingiz" required>
+        <textarea id="fMsg" rows="4" placeholder="Xabaringiz" required></textarea>
+        <button class="btn" type="submit">Yuborish ✉️</button>
+      </form>
+      <div class="contacts reveal">
+        <a href="mailto:cripmayngame@gmail.com" class="btn btn-outline">📧 Email</a>
+        <a href="https://t.me/itzIlyosbek" target="_blank" rel="noopener" class="btn btn-outline">✈️ Telegram</a>
+        <a href="https://github.com/IlyosbekIT" target="_blank" rel="noopener" class="btn btn-outline">💻 GitHub</a>
+        <a href="https://share.google/00MURgYZp73MYWZlD" target="_blank" rel="noopener" class="btn btn-outline">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><p>© 2026 Ilyosbek. Barcha huquqlar himoyalangan.</p></footer>
+<button class="to-top" id="toTop" aria-label="Yuqoriga">↑</button>
+<div class="cur-ring" id="curRing" aria-hidden="true"></div><div class="cur-dot" id="curDot" aria-hidden="true"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
